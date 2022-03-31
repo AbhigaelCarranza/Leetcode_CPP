@@ -37,5 +37,6 @@ int main()
     Accord my_accord;
     my_accord.get_acceleration();
     my_accord.my_honda();
+    cout << "Honda y Accord\n";
     return 0;
 }
