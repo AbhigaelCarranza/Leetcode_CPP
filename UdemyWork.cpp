@@ -27,6 +27,4 @@ void numberGuay(int number)
             break;
         }
     }
-    cout << "Value= "<<value<<endl;
-    cout << "Number="<<number<<endl;
 }
