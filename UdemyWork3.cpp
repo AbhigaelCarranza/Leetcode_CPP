@@ -8,9 +8,10 @@ int main()
 {
     vector<int> VecBlack = {1,2,3,4};
     vector<int> VecAux;
+    vector<int> VecRed;
+
     printVector(VecBlack);
     VecAux.push_back(VecBlack[0]);
-    VecAux.push_back(VecBlack[1]);
     VecBlack.erase(VecBlack.begin());
     printVector(VecBlack);
     cout<<"Vec AUX "<<endl;
