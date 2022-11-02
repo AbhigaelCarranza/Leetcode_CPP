@@ -7,12 +7,15 @@ using namespace std;
 void addElementList();
 void removeElementList();
 void createList();
+void showList();
+void insertElementList(char product[15], int account, int position);
+void callMenuList();
 
 struct LIST* shoppinglist = NULL;
 
 int main()
 {
-
+    callMenuList();
     return 0;
 }
 
@@ -56,8 +59,8 @@ void showList()
     cout << endl << endl << "Shopping List:" << endl;
 
     for (int i = 1; item != NULL; i++) {
-        cout << endl << endl << "Article " << i << " in shopping list:";
-        cout << endl << item->product << " x" << item->account;
+        cout << endl<< "Article " << i << " in shopping list: ";
+        cout << item->product << " x" << item->account;
         item = item->next;
     }
 }
